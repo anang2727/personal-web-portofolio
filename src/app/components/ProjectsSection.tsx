@@ -42,20 +42,19 @@ const projects = [
     status: "Live",
     link: "https://bestframe.vercel.app/",
   },
-  // {
-  //   title: "Company Profile",
-  //   category: "Website",
-  //   tech: ["Laravel", "MySQL", "TailwindCSS"],
-  //   description:
-  //     "Website company profile profesional dengan CMS custom dan optimasi SEO untuk meningkatkan online presence.",
-  //   longDescription:
-  //     "Website yang dioptimalkan untuk performa dan SEO, dengan skor Lighthouse 98+. CMS custom memungkinkan tim non-teknis memperbarui konten dengan mudah. Termasuk blog terintegrasi, form kontak dengan notifikasi email, dan integrasi Google Analytics.",
-  //   image:
-  //     "https://images.unsplash.com/photo-1549637642-90187f64f420?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-  //   year: "2023",
-  //   status: "Live",
-  //   link: "",
-  // },
+  {
+    title: "DASI (Daya Inovasi)",
+    category: "Full-Stack Web",
+    tech: ["Next.js", "NestJS", "Ant Design", "Staging DB"],
+    description:
+      "Sistem informasi manajemen inovasi daerah untuk PUSLINDA Bireuen, dilengkapi dengan sistem notifikasi otomatis dan manajemen event.",
+    longDescription:
+      "Berkontribusi sebagai Full-Stack Developer dalam pengembangan platform DASI untuk PUSLINDA. Bertanggung jawab dalam mengimplementasikan sistem notifikasi otomatis (Email & WhatsApp) yang terpicu ketika admin memperbarui data operator daerah. Mengelola perbaikan fitur CRUD pada menu data instansi dan data inovasi, perbaikan modal pembuatan event, serta perancangan visual khusus untuk halaman penilaian juri. Selain itu, melakukan relayouting halaman detail event, manajemen data juri (add, edit, delete), serta menginisialisasi modul penilaian event (assessment module). Proyek ini dibangun menggunakan arsitektur modern Next.js di sisi frontend dengan komponen Ant Design, serta NestJS di sisi backend menggunakan lingkungan basis data staging.",
+    image: "/projek4.png",
+    year: "2025",
+    status: "Live",
+    link: "https://puslinda.bireuenkab.go.id/pages/dasi.html",
+  },
   // {
   //   title: "Task Management",
   //   category: "Web App",

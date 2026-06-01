@@ -3,6 +3,14 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
+  role: "Junior Full-Stack Developer",
+  company: "PT Jalur Digital Indonesia",
+  period: "2025 – 2026",
+  description: "Berkontribusi dalam pengembangan platform DASI (Daya Inovasi) untuk PUSLINDA Bireuen. Bertanggung jawab mengimplementasikan fitur CRUD data instansi, modul penilaian juri (assessment module), relayouting halaman detail event, serta mengintegrasikan sistem notifikasi otomatis via Email & WhatsApp.",
+  current: true,
+  type: "Part-Time"
+  },
+  {
     role: "Research and Development",
     company: "Bircode Community",
     period: "Oct 2024 – Sekarang",

@@ -52,28 +52,37 @@ export default function AboutSection() {
             className="lg:col-span-3 bg-white border border-[#E5E7EB] rounded-2xl p-7 flex flex-col gap-6"
           >
             {/* Avatar row */}
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-[#111827] flex items-center justify-center shrink-0">
-                <span className="text-white text-sm font-semibold tracking-tight">AK</span>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-[#111827]">Anang Kurniawan</p>
-                <div className="flex items-center gap-3 mt-0.5">
-                  <span className="flex items-center gap-1 text-[10px] text-[#9CA3AF]">
-                    <GraduationCap className="w-3 h-3" />
-                    S1 Informatika · Univ. Almuslim
-                  </span>
-                  <span className="flex items-center gap-1 text-[10px] text-[#9CA3AF]">
-                    <MapPin className="w-3 h-3" />
-                    Bireuen, Aceh
-                  </span>
-                </div>
-              </div>
-              <div className="ml-auto flex items-center gap-1.5 px-2.5 py-1 border border-[#E5E7EB] rounded-full">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-[10px] text-[#6B7280]">Open to work</span>
-              </div>
-            </div>
+<div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+
+  <div className="flex items-center gap-4 min-w-0 flex-1">
+    <div className="w-12 h-12 rounded-xl bg-[#111827] flex items-center justify-center shrink-0">
+      <span className="text-white text-sm font-semibold tracking-tight">AK</span>
+    </div>
+
+    <div className="min-w-0">
+      <p className="text-sm font-semibold text-[#111827] truncate">
+        Anang Kurniawan
+      </p>
+
+      <div className="flex flex-col sm:flex-row sm:items-center sm:gap-3 mt-0.5 gap-0.5">
+        <span className="flex items-center gap-1 text-[10px] text-[#9CA3AF]">
+          <GraduationCap className="w-3 h-3 shrink-0" />
+          <span className="truncate">S1 Informatika · Univ. Almuslim</span>
+        </span>
+        <span className="flex items-center gap-1 text-[10px] text-[#9CA3AF]">
+          <MapPin className="w-3 h-3 shrink-0" />
+          Bireuen, Aceh
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div className="flex items-center gap-1.5 px-2.5 py-1 border border-[#E5E7EB] rounded-full shrink-0">
+    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+    <span className="text-[10px] text-[#6B7280]">Open to work</span>
+  </div>
+
+</div>
 
             {/* Bio text */}
             <div className="space-y-3">
