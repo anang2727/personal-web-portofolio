@@ -8,6 +8,7 @@ import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
+import CertificatesSection from "./components/CertificatesSection";
 import ContactSection from "./components/ContactSection";
 import FloatingActionButton from "./components/FloatingActionButton";
 import BackToTop from "./components/BackToTop";
@@ -55,6 +56,7 @@ export default function App() {
         <SkillsSection />
         <ExperienceSection />
         <ProjectsSection />
+        <CertificatesSection />
         <ContactSection />
       </main>
 

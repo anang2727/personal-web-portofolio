@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, FileText } from "lucide-react";
 import {
   SiLaravel,
   SiNextdotjs,
@@ -12,25 +12,25 @@ import {
 } from "react-icons/si";
 
 const techStack = [
-  { name: "Laravel",    icon: SiLaravel,    color: "#FF2D20" },
-  { name: "Next.js",    icon: SiNextdotjs,  color: "#000000" },
-  { name: "React",      icon: SiReact,      color: "#61DAFB" },
-  { name: "Tailwind CSS",    icon: SiTailwindcss,    color: "#61DAFB" },
-  { name: "Supabase",   icon: SiSupabase,   color: "#000000" },
-  { name: "MySQL",      icon: SiMysql,      color: "#4479A1" },
+  { name: "Laravel", icon: SiLaravel, color: "#FF2D20" },
+  { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
+  { name: "React", icon: SiReact, color: "#61DAFB" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#61DAFB" },
+  { name: "Supabase", icon: SiSupabase, color: "#000000" },
+  { name: "MySQL", icon: SiMysql, color: "#4479A1" },
   { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-  { name: "Node.js",    icon: SiNodedotjs,  color: "#339933" },
+  { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
 ];
 
 // Positions arranged around a circle, mapped to CSS percentages
 const positions = [
-  { top: "6%",  left: "50%", tx: "-50%" },
+  { top: "6%", left: "50%", tx: "-50%" },
   { top: "20%", left: "85%", tx: "-50%" },
   { top: "50%", left: "96%", tx: "-50%" },
   { top: "78%", left: "85%", tx: "-50%" },
   { top: "90%", left: "50%", tx: "-50%" },
   { top: "78%", left: "15%", tx: "-50%" },
-  { top: "50%", left: "4%",  tx: "-50%" },
+  { top: "50%", left: "4%", tx: "-50%" },
   { top: "20%", left: "15%", tx: "-50%" },
 ];
 
@@ -99,38 +99,37 @@ export default function HeroSection() {
             </motion.p>
 
             {/* CTAs */}
-       <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.4 }}
-            className="flex flex-wrap items-center gap-3 relative z-10" // Ditambahkan relative z-10 di bungkusnya
-          >
-            <motion.button
-              onClick={() =>
-                document
-                  .querySelector("#projects")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
-              // Ditambahkan !cursor-pointer, pointer-events-auto, dan relative z-20
-              className="!cursor-pointer pointer-events-auto relative z-20 flex items-center gap-2 px-5 h-10 bg-[#111827] text-white text-sm font-medium rounded-xl hover:bg-[#1F2937] transition-colors"
-              whileTap={{ scale: 0.97 }}
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.4 }}
+              className="flex flex-wrap items-center gap-3 relative z-10" // Ditambahkan relative z-10 di bungkusnya
             >
-              Lihat Proyek
-              <ArrowRight className="w-4 h-4" /> {/* Hapus cursor-pointer di sini */}
-            </motion.button>
+              <motion.button
+                onClick={() =>
+                  document
+                    .querySelector("#projects")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
+                // Ditambahkan !cursor-pointer, pointer-events-auto, dan relative z-20
+                className="!cursor-pointer pointer-events-auto relative z-20 flex items-center gap-2 px-5 h-10 bg-[#111827] text-white text-sm font-medium rounded-xl hover:bg-[#1F2937] transition-colors"
+                whileTap={{ scale: 0.97 }}
+              >
+                Lihat Proyek
+                <ArrowRight className="w-4 h-4" /> {/* Hapus cursor-pointer di sini */}
+              </motion.button>
 
-            <motion.a
-              href="/cv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              // Ditambahkan !cursor-pointer, pointer-events-auto, dan relative z-20
-              className="!cursor-pointer pointer-events-auto relative z-20 flex items-center gap-2 px-5 h-10 border border-[#E5E7EB] text-[#374151] text-sm font-medium rounded-xl hover:bg-[#F9FAFB] transition-colors"
-              whileTap={{ scale: 0.97 }}
-            >
-              <Download className="w-3.5 h-3.5" /> {/* Hapus cursor-pointer di sini */}
-              Download CV
-            </motion.a>
-          </motion.div>
+              <motion.a
+                href="/mycv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="!cursor-pointer pointer-events-auto relative z-20 flex items-center gap-2 px-5 h-10 border border-[#E5E7EB] text-[#374151] text-sm font-medium rounded-xl hover:bg-[#F9FAFB] transition-colors"
+                whileTap={{ scale: 0.97 }}
+              >
+                <FileText className="w-3.5 h-3.5" />
+                Lihat CV
+              </motion.a>
+            </motion.div>
             {/* Stats */}
             <motion.div
               initial={{ opacity: 0 }}
