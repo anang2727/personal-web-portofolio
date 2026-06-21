@@ -268,7 +268,7 @@ useEffect(() => {
                 </div>
 
                 <motion.a
-                  href="/cv.pdf"
+                  href="/mycv.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full h-11 bg-[#111827] text-white text-sm font-medium rounded-xl"
