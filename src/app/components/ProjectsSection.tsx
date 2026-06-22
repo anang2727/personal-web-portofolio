@@ -55,20 +55,20 @@ const projects = [
     status: "Live",
     link: "https://puslinda.bireuenkab.go.id/pages/dasi.html",
   },
-  // {
-  //   title: "Task Management",
-  //   category: "Web App",
-  //   tech: ["React", "Node.js", "MongoDB"],
-  //   description:
-  //     "Aplikasi manajemen task dengan fitur collaboration, real-time updates, dan integrasi dengan tools populer.",
-  //   longDescription:
-  //     "Solusi produktivitas tim yang mendukung kanban board, Gantt chart, dan list view. Fitur kolaborasi real-time memungkinkan komentar, mention, dan attachment langsung pada task. Terintegrasi dengan Slack, GitHub, dan Google Workspace untuk workflow yang seamless.",
-  //   image:
-  //     "https://images.unsplash.com/photo-1507099985932-87a4520ed1d5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-  //   year: "2023",
-  //   status: "In Progress",
-  //   link: "",
-  // },
+  {
+    title: "Sistem Informasi Dayah An-Nabawi",
+    category: "Web App",
+    tech: ["Laravel", "Filament", "PHP", "MySQL"],
+    description:
+      "Sistem informasi terpadu untuk manajemen administrasi, data santri, dan pengelolaan akademik Dayah An-Nabawi.",
+    longDescription:
+      "Solusi digitalisasi pesantren yang dirancang untuk efisiensi tata kelola Dayah An-Nabawi. Sistem ini mencakup manajemen data santri, pelacakan kurikulum dayah (kitab/halaqah), pencatatan pelanggaran & prestasi, hingga pengelolaan keuangan (SPP). Dilengkapi dengan panel admin berbasis Filament yang responsif untuk memudahkan pengurus, ustadz, dan pimpinan dalam memonitor perkembangan dayah secara real-time.",
+    image:
+      "/projek5.png",
+    year: "2026",
+    status: "Live",
+    link: "http://nabawi.site.je/",
+  }
   // {
   //   title: "Portfolio Generator",
   //   category: "Web App",
@@ -136,13 +136,12 @@ function PreviewModal({
             {/* Status badge */}
             <div className="absolute bottom-4 left-6">
               <span
-                className={`px-2.5 py-1 rounded-full text-xs font-medium ${
-                  project.status === "Live"
+                className={`px-2.5 py-1 rounded-full text-xs font-medium ${project.status === "Live"
                     ? "bg-emerald-500/20 text-emerald-300 border border-emerald-500/30"
                     : project.status === "Beta"
-                    ? "bg-amber-500/20 text-amber-300 border border-amber-500/30"
-                    : "bg-blue-500/20 text-blue-300 border border-blue-500/30"
-                }`}
+                      ? "bg-amber-500/20 text-amber-300 border border-amber-500/30"
+                      : "bg-blue-500/20 text-blue-300 border border-blue-500/30"
+                  }`}
               >
                 {project.status}
               </span>
@@ -221,9 +220,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           <motion.img
             src={project.image}
             alt={project.title}
-            className={`w-full h-full object-cover transition-opacity duration-500 ${
-              imageLoaded ? "opacity-100" : "opacity-0"
-            }`}
+            className={`w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? "opacity-100" : "opacity-0"
+              }`}
             onLoad={() => setImageLoaded(true)}
             animate={{ scale: hovered ? 1.04 : 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
@@ -249,13 +247,12 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           {/* Status badge */}
           <div className="absolute top-3 right-3">
             <span
-              className={`px-2 py-0.5 rounded-full text-[10px] font-medium ${
-                project.status === "Live"
+              className={`px-2 py-0.5 rounded-full text-[10px] font-medium ${project.status === "Live"
                   ? "bg-emerald-50 text-emerald-600 border border-emerald-200"
                   : project.status === "Beta"
-                  ? "bg-amber-50 text-amber-600 border border-amber-200"
-                  : "bg-blue-50 text-blue-600 border border-blue-200"
-              }`}
+                    ? "bg-amber-50 text-amber-600 border border-amber-200"
+                    : "bg-blue-50 text-blue-600 border border-blue-200"
+                }`}
             >
               {project.status}
             </span>
